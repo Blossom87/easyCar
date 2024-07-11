@@ -1,0 +1,78 @@
+<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><element><id>UMLClass</id><coordinates><x>306</x><y>315</y><w>189</w><h>198</h></coordinates><panel_attributes>/Vehicle/
+--
+- brand: String
+- model: String
+- color: String
+- buyingDate: LocalDate
+- pricePerDay: double
+--
++ constructors
++ getters/setters
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>963</x><y>315</y><w>333</w><h>198</h></coordinates><panel_attributes>Client
+--
+- firstName: String
+- lastName: String
+- address: String
+- city: String
+- postalCode: String
+--
++ constructors
++ getters/setters
+
++ totalMoneySpent(): double
++ addReservation(reservation: Reservation): void
++ removeReservation(reservation: Reservation): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>630</x><y>315</y><w>189</w><h>198</h></coordinates><panel_attributes>Reservation
+--
+- startDate: LocalDate
+- endDate: LocalDate
+- paid: boolean 
+--
++ constructors
++ getters/setters
+
++ totalPrice(): double
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>486</x><y>369</y><w>162</w><h>45</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=1..1
+&lt; concerns</panel_attributes><additional_attributes>160;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>810</x><y>369</y><w>171</w><h>45</h></coordinates><panel_attributes>lt=-
+m1=1..1
+m2=0..n
+&lt; makes
+</panel_attributes><additional_attributes>170;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>810</y><w>189</w><h>90</h></coordinates><panel_attributes>Car
+--
+- seats: int
+--
++ constructors
++ getters/setters
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>288</x><y>810</y><w>189</w><h>90</h></coordinates><panel_attributes>Truck
+--
+- cargoCapactiy: double
+--
+- constructors
+- getters/setters
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>486</x><y>603</y><w>189</w><h>90</h></coordinates><panel_attributes>Bike
+--
+- size: char
+--
+- constructors
+- getters/setters
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>432</x><y>504</y><w>108</w><h>117</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;100;110</additional_attributes></element><element><id>UMLClass</id><coordinates><x>117</x><y>603</y><w>288</w><h>153</h></coordinates><panel_attributes>/MotorizedVehicle/
+--
+- fuelType: Enum["Essence", "Diesel", "Electric"]
+- fuelConsumption: int
+- integratedGPS: boolean
+--
++ constructors
++ getters/setters
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>504</y><w>117</w><h>117</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>110;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>747</y><w>153</w><h>81</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>150;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>261</x><y>747</y><w>135</w><h>81</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;130;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1026</x><y>27</y><w>189</w><h>171</h></coordinates><panel_attributes>bg=blue
+&lt;&lt;interface&gt;&gt;
+/Comparable&lt;Client&gt;/
+--
+
+--
+/+ compareTo(Client c): int/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1116</x><y>189</y><w>90</w><h>144</h></coordinates><panel_attributes>lt=&lt;&lt;.
+&lt;&lt;implements&gt;&gt;</panel_attributes><additional_attributes>10;10;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>855</x><y>36</y><w>189</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>190;20;10;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>738</x><y>9</y><w>126</w><h>63</h></coordinates><panel_attributes>Note..
+bg=yellow
+
+Interface fournie par 
+le JDK.</panel_attributes><additional_attributes></additional_attributes></element></diagram>
